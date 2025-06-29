@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            margin-top: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 9%;
+            background-color: transparent;
+            filter: drop-shadow(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: #b74b4b;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        nav a {
+            font-size: 1.8rem;
+            color: white;
+            margin-left: 4rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #b74b4b;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 150px auto;
+            background-color: #f4f4f4;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #b74b4b;
+        }
+
+        .game-list {
+            margin-top: 40px;
+        }
+
+        .game-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .game-list li {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .game-list img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+
+        .game-list li:hover {
+            background-color: #b74b4b;
+            color: black;
+        }
+
+        .game-list a {
+            color: white; /* Warna teks link */
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+        }
+
+        .game-list a:hover {
+            color: black; /* Warna teks saat hover */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.8rem;
+            background-color: black;
+            border-radius: 4rem;
+            font-size: 1.6rem;
+            color: #b74b4b;
+            letter-spacing: 0.3rem;
+            font-weight: 600;
+            border: 2px solid #b74b4b;
+            transition: 0.3s ease;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #b74b4b;
+            color: black;
+            box-shadow: 0 0 25px #b74b4b;
+        }
+
+        @media(max-width:995px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            .game-list ul {
+                font-size: 1.4rem;
+            }
+
+            .game-list img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Daftar Game</div>
+        <div class="logo"><a href="Porto.html" class="btn">Home</a></div>   
+    </header>
+
+    <div class="container">
+        <h1>Daftar Game</h1>
+        <div class="game-list">
+            <ul>
+                <li>
+                    <img src="fhoto/Valorant.jpg" alt="Valorant">
+                    <span><a href="val Data.html" target="_blank">Valorant</a></span>
+                </li>
+                <li>
+                    <img src="fhoto/Pubg.jpg" alt="PUBG Battleground">
+                    <span><a href="pubg data.html" target="_blank">PUBG Battleground</a></span>
+                </li>
+                <li>
+                    <img src="fhoto/Stan.jpg" alt="Standoff 2">
+                    <span><a href="Standoff data.html" target="_blank">Standoff 2</a></span>
+                </li>
+                <li>
+                    <img src="fhoto/Genshin.jpg" alt="Genshin Impact">
+                    <span><a href="Genshin data.html" target="_blank">Genshin Impact</a></span>
+                </li>
+                <li>
+                    <img src="fhoto/Hsr.jpg" alt="Honkai Star Rail">
+                    <span><a href="Honkai data.html" target="_blank">Honkai Star Rail</a></span>
+                </li>
+                <li>
+                    <img src="fhoto/ZZZ.jpg" alt="Zenless Zone Zero">
+                    <span><a href="ZZZ.html" target="_blank">Zenless Zone Zero</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
